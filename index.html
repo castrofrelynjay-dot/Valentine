@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Baby</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="sticker tl">🧸</div>
+        <div class="sticker tr">✨</div>
+        <div class="sticker bl">🌸</div>
+        <div class="sticker br">🎀</div>
+        <div class="sticker side-l">🍭</div>
+        <div class="sticker side-r">☁️</div>
+
+        <div id="page1" class="page active">
+            <h1>Hello, my baby.</h1>
+            <p>I built this website to ask you something.</p>
+            <p><strong>- FRELYN</strong></p>
+            <button class="btn" onclick="startExperience()">Next ❤️</button>
+        </div>
+
+        <div id="page2" class="page">
+            <h1>A Song for You</h1>
+            <p>Jason Mraz says it best. I'm all in.</p>
+            <div class="video-container">
+                <video id="myVideo" controls>
+                    <source src="06c3fe4e-71ca-4a73-9dee-78c7e30e503f.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="song-box">
+                "I'm yours" by Jason Mraz
+            </div>
+            <button class="btn" onclick="nextPage(3)">Keep going...</button>
+        </div>
+
+        <div id="page3" class="page">
+            <h1>Why I Love You</h1>
+            <div class="reason-list">
+                <ul class="reasons-bullet-list">
+                    <li>You believe in me even when I don't.</li>
+                    <li>You make life an adventure.</li>
+                    <li>Your intelligence and mind.</li>
+                    <li>Your smile, my favorite sight.</li>
+                    <li>The sound of your laugh.</li>
+                    <li>The face you make when trying to be serious.</li>
+                    <li>You're my best friend and partner.</li>
+                    <li>The memories we've built and will make.</li>
+                    <li>You are my first call.</li>
+                    <li>How you challenge me.</li>
+                    <li>There aren't enough numbers to list it all.</li>
+                </ul>
+            </div>
+            <button class="btn" onclick="nextPage(4)">One last thing...</button>
+        </div>
+
+        <div id="page4" class="page">
+            <h1>Will you be my Valentine?</h1>
+            <div class="final-buttons">
+                <button id="yesBtn" class="btn" onclick="celebrate()">YES!</button>
+                <button id="noBtn" class="btn">No</button>
+            </div>
+        </div>
+
+        <div id="celebration" class="page">
+            <h1>YAY!</h1>
+            <p>I love you, baby!</p>
+            <div class="video-container">
+                <video id="celebrationVideo" loop muted playsinline>
+                    <source src="154672f3-b278-43ab-8e6c-2e1c6c5ee33b.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
